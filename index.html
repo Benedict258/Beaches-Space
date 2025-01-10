@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathway Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="transparent-section">
+    <div class="container">
+        <h1>Pathway Quest</h1>
+        <div class="dashboard">
+            <div class="main-content">
+                <div class="card" id="weekly-schedule">
+                    <h2>Weekly Schedule</h2>
+                    <div id="schedule-content"></div>
+                </div>
+                <div class="card" id="notifications">
+                    <h2>Notifications</h2>
+                    <div id="next-task"></div>
+                    <ul id="notification-list"></ul>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="card" id="task-manager">
+                    <h2>Task Manager</h2>
+                    <div id="task-form">
+                        <input type="text" id="task-input" placeholder="New task">
+                        <select id="category-select">
+                            <option value="">Select category</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Mechatronics & Technology">Mechatronics & Technology</option>
+                            <option value="Schoolwork">Schoolwork</option>
+                            <option value="Business Learning">Business Learning</option>
+                        </select>
+                        <select id="day-select">
+                            <option value="">Select day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <button id="add-task">Add Task</button>
+                    </div>
+                </div>
+                <div class="card" id="progress-summary">
+                    <h2>Weekly Progress</h2>
+                    <div id="progress-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('digital.png');
+    color: #4a0e4e; /* Dark purple text */
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+h1 {
+    color: #f1ebf1; /* Dark purple */
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.card {
+    background: #ffffff; /* White background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(74, 14, 78, 0.1);
+}
+
+h2 {
+    color: #4a0e4e; /* Dark purple */
+    margin-top: 0;
+    border-bottom: 2px solid #ffd700; /* Gold border */
+    padding-bottom: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4a0e4e; /* Dark purple border */
+    border-radius: 5px;
+}
+
+button {
+    background: #4a0e4e; /* Dark purple background */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #7b2482; /* Lighter purple on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f0e6ff; /* Very light purple background */
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    margin-bottom: 15px;
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #ffd700; /* Gold progress bar */
+    border-radius: 3px;
+    transition: width 500ms ease-in-out;
+}
+
+#next-task {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0e6ff; /* Very light purple background */
+    border-radius: 5px;
+    color: #4a0e4e; /* Dark purple text */
+}
+
+.day-schedule {
+    margin-bottom: 20px;
+}
+
+.day-schedule h3 {
+    margin-bottom: 10px;
+    color: #4a0e4e; /* Dark purple */
+    border-bottom: 1px solid #ffd700; /* Gold border */
+    padding-bottom: 5px;
+}
+
+.task-item {
+    background: #ffffff; /* White background */
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+    border: 1px solid #e6e6e6;
+}
+
+.task-item:hover {
+    background: #f9f4ff; /* Light purple on hover */
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item .task-content {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-item .remove-task {
+    background: none;
+    border: none;
+    color: #4a0e4e; /* Dark purple */
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.task-item .remove-task:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: none; /* Remove flex-grow to prevent sidebar from stretching */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+}
+
+/* Additional styles for better visuals */
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-form input,
+.task-form select {
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+#schedule-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.day-schedule {
+    background: #f9f4ff; /* Light purple background for each day's schedule */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day-schedule h3 {
+    color: #4a0e4e; /* Dark purple */
+    margin-bottom: 10px;
+}
+
+.task-item {
+    background: #ffffff; /* White background for tasks */
+    border: 1px solid #e6e6e6; /* Light gray border */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.task-item:hover {
+    background: #f0e6ff; /* Light purple on hover */
+}
+
+.task-item .remove-task {
+    background: none;
+    border: none;
+    color: #4a0e4e; /* Dark purple */
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.task-item .remove-task:hover {
+    color: #ffd700; /* Gold on hover */
+}
