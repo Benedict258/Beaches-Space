@@ -152,4 +152,3 @@ setInterval(() => {
     renderProgress();
     updateNextTask();
 }, 5000);
-
