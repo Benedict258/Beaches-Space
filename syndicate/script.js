@@ -23,25 +23,25 @@ const addEventOnElem = function (elem, type, callback) {
  * navbar toggle
  */
 
-const navbar = document.querySelector("[data-navbar]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-const navToggler = document.querySelector("[data-nav-toggler]");
+// const navbar = document.querySelector("[data-navbar]");
+// const navbarLinks = document.querySelectorAll("[data-nav-link]");
+// const navToggler = document.querySelector("[data-nav-toggler]");
 
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  navToggler.classList.toggle("active");
-  document.body.classList.toggle("active");
-}
+// const toggleNavbar = function () {
+//   navbar.classList.toggle("active");
+//   navToggler.classList.toggle("active");
+//   document.body.classList.toggle("active");
+// }
 
-addEventOnElem(navToggler, "click", toggleNavbar);
+// addEventOnElem(navToggler, "click", toggleNavbar);
 
-const closeNavbar = function () {
-  navbar.classList.remove("active");
-  navToggler.classList.remove("active");
-  document.body.classList.remove("active");
-}
+// const closeNavbar = function () {
+//   navbar.classList.remove("active");
+//   navToggler.classList.remove("active");
+//   document.body.classList.remove("active");
+// }
 
-addEventOnElem(navbarLinks, "click", closeNavbar);
+// addEventOnElem(navbarLinks, "click", closeNavbar);
 
 
 
